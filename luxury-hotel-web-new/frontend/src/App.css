@@ -1,0 +1,37 @@
+/* Đặt chiều cao tổng thể cho app */
+html, body, #root, .app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content co giãn theo chiều cao */
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
+  background-color: #D4D4D4;
+}
+
+/* Nội dung placeholder (trống) */
+.placeholder {
+  text-align: center;
+  color: #333;
+}
+
+/* Responsive hỗ trợ mobile */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px 10px;
+  }
+
+  .placeholder h2 {
+    font-size: 20px;
+  }
+
+  .placeholder p {
+    font-size: 14px;
+  }
+}
